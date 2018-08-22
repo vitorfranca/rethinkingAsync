@@ -20,7 +20,7 @@ function output(text) {
 // **************************************
 
 function getFile(file) {
-	// return ??
+	return new Promise(resolve => fakeAjax(file, resolve));
 }
 
 // request all files concurrently
